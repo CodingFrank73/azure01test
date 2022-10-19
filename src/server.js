@@ -3,7 +3,7 @@ const cors = require('cors');
 
 const dotenv = require("dotenv").config();
 
-// const { userRouter } = require('./routes/user-router');
+const { userRouter } = require('./routes/user-router');
 
 const app = express();
 const PORT = process.env.PORT || 9000;
@@ -20,7 +20,7 @@ app.get('/', (req, res) => {
     res.send('Herzlich willkommen auf meinem ersten WEB-App Azure-Server mit Git-Hub Anbindung...')
 })
 
-// app.use("/api/users", userRouter)
+app.use("/api/users", userRouter)
 
 app.listen(PORT, () => {
     console.log(`Server listen on Port: ${PORT}`);
