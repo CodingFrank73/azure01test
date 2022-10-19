@@ -17,7 +17,7 @@ app.use(express.json())
 app.use(cors({ origin: true, credentials: true }))
 
 app.get('/', (req, res) => {
-    res.send('Herzlich willkommen auf meinem ersten WEB-App Azure-Server!!!')
+    res.send('Herzlich willkommen auf meinem ersten WEB-App Azure-Server mit Git-Hub Anbindung...')
 })
 
 // app.use("/api/users", userRouter)
